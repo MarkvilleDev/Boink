@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Script : MonoBehaviour
 {
-    /*
-    this is random code that doesnt do anything
-    */
+    sidufh eirghu eghrlsv
 }
 
 //these comments are here for testing purposes
