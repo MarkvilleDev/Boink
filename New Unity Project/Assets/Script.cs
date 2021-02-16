@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Script : MonoBehaviour
 {
-    sidufh eirghu eghrlsv
+    sidufh what?
 }
 
 //these comments are here for testing purposes
