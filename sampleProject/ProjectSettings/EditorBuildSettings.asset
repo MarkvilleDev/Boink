@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/startingMenu.unity
     guid: a0cc9386ccc204e73b90ef8609a48350
   - enabled: 1
+    path: Assets/Scenes/skinselector.unity
+    guid: 11720c7f2b25a42fd99769381ff2c829
+  - enabled: 1
+    path: Assets/Scenes/level selector.unity
+    guid: 4de0eb3f8619f4aa9b0ff0d8582b712d
+  - enabled: 1
     path: Assets/Scenes/settings.unity
     guid: da18e178dfc3d47beac61fd756888a55
   - enabled: 1
