@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class pausecomp : MonoBehaviour
 {
-    public static bool paused = false; 
+    // public static bool paused = false; 
     public GameObject pauseMenuUI;
-
+    // void Setup() {
+    //     pauseMenuUI.SetActive(true);
+    // }
     // Update is called once per frame
-    void Update(){
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 1f;
-        paused = false;
-    }
+    // void Update(){
+    //     pauseMenuUI.SetActive(false);
+    //     Time.timeScale = 1f;
+    //     paused = false;
+    // }
     // public void pause() {
     //     pauseMenuUI.SetActive(true);
     //     Time.timeScale = 0f;
