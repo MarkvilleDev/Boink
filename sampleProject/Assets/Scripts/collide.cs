@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class collide : MonoBehaviour
 {
+
+public levelchanger levelchangescript;
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("DrawnWall"))
@@ -24,8 +28,6 @@ public class collide : MonoBehaviour
     }
     private void win()
     {
-        GameObject.FindGameObjectWithTag("Player").SetActive(false);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
-        Debug.Log("WIN");
+        levelchangescript.fadeToLevel(SceneManager.GetActiveScene().buildIndex);
     }
 }

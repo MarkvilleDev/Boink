@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - DrawnWall
+  - levelChanger
   layers:
   - Default
   - TransparentFX
