@@ -7,22 +7,14 @@ public class levelchanger : MonoBehaviour
 {
     public Animator animator;
 
-    private int levelToLoad;
-
-    private void Update()
+    public void win()
     {
-        if (Input.GetMouseButtonDown(0)) {
-            fadeToLevel(SceneManager.GetActiveScene().buildIndex);
-        }
-
+        animator.SetTrigger("win");
+        Debug.Log("win");
     }
 
-    public void fadeToLevel (int levelIndex) {
-        levelToLoad = levelIndex+1;
-        animator.SetTrigger("fadeOut");
-    }
-    public void OnFadeComplete ()
+    public void OnFadeComplete()
     {
-        SceneManager.LoadScene(levelToLoad);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

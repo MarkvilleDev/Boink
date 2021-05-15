@@ -5,9 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class collide : MonoBehaviour
 {
-
-public levelchanger levelchangescript;
-
+   public GameObject lvlchngscript;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -17,7 +15,8 @@ public levelchanger levelchangescript;
         }
         if (collision.gameObject.CompareTag("Finish"))
         {
-            win();
+            GameObject.FindGameObjectWithTag("Player").SetActive(false);
+            lvlchngscript.GetComponent<levelchanger>().win();
         }
     }
 
@@ -26,8 +25,5 @@ public levelchanger levelchangescript;
         Debug.Log("Ouch");
         GameObject.Destroy(GameObject.FindGameObjectWithTag("DrawnWall"));
     }
-    private void win()
-    {
-        //levelchangescript.fadeToLevel(SceneManager.GetActiveScene().buildIndex);
-    }
+
 }
