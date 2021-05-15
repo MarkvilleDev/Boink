@@ -28,6 +28,6 @@ public levelchanger levelchangescript;
     }
     private void win()
     {
-        levelchangescript.fadeToLevel(SceneManager.GetActiveScene().buildIndex);
+        //levelchangescript.fadeToLevel(SceneManager.GetActiveScene().buildIndex);
     }
 }
