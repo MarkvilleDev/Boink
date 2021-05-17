@@ -839,7 +839,11 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 593, y: 300}
+=======
+  m_AnchoredPosition: {x: 834, y: 324}
+>>>>>>> parent of 0e866f8 (Update level 1.unity)
 =======
   m_AnchoredPosition: {x: 834, y: 324}
 >>>>>>> parent of 0e866f8 (Update level 1.unity)
@@ -2896,9 +2900,12 @@ MonoBehaviour:
   edgeCollider: {fileID: 0}
   positions: []
 <<<<<<< HEAD
+<<<<<<< HEAD
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
+=======
+>>>>>>> parent of 0e866f8 (Update level 1.unity)
 =======
 >>>>>>> parent of 0e866f8 (Update level 1.unity)
 --- !u!4 &1750232800
@@ -2951,9 +2958,12 @@ MonoBehaviour:
   edgeCollider: {fileID: 0}
   positions: []
 <<<<<<< HEAD
+<<<<<<< HEAD
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
+=======
+>>>>>>> parent of 0e866f8 (Update level 1.unity)
 =======
 >>>>>>> parent of 0e866f8 (Update level 1.unity)
 --- !u!1 &1873688427
