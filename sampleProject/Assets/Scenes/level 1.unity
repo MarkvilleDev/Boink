@@ -838,7 +838,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 593, y: 300}
+=======
+  m_AnchoredPosition: {x: 834, y: 324}
+>>>>>>> parent of 0e866f8 (Update level 1.unity)
   m_SizeDelta: {x: 102.332245, y: 88.96265}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &323173955
@@ -2891,9 +2895,12 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   edgeCollider: {fileID: 0}
   positions: []
+<<<<<<< HEAD
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
+=======
+>>>>>>> parent of 0e866f8 (Update level 1.unity)
 --- !u!4 &1750232800
 Transform:
   m_ObjectHideFlags: 0
@@ -2943,9 +2950,12 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   edgeCollider: {fileID: 0}
   positions: []
+<<<<<<< HEAD
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
+=======
+>>>>>>> parent of 0e866f8 (Update level 1.unity)
 --- !u!1 &1873688427
 GameObject:
   m_ObjectHideFlags: 0
