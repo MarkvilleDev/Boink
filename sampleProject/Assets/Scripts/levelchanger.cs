@@ -44,7 +44,7 @@ public class levelchanger : MonoBehaviour
     public void OnFadeComplete()
     {
         Debug.Log("move on");
-        SceneManager.LoadScene(curScene + 1);
+        //SceneManager.LoadScene(curScene + 1);
     }
     public void disableCanvas()
     {
