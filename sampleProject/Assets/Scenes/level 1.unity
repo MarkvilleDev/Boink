@@ -449,7 +449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 301.2, y: 86}
+  m_AnchoredPosition: {x: 301.19922, y: 86}
   m_SizeDelta: {x: 602.43274, y: 172.60315}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &125866422
@@ -1355,7 +1355,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 492839117}
+      - m_Target: {fileID: 2037670585}
         m_MethodName: credits
         m_Mode: 1
         m_Arguments:
@@ -1565,7 +1565,6 @@ GameObject:
   - component: {fileID: 492839120}
   - component: {fileID: 492839119}
   - component: {fileID: 492839118}
-  - component: {fileID: 492839117}
   m_Layer: 5
   m_Name: pauseScreen
   m_TagString: Untagged
@@ -1573,21 +1572,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &492839117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492839116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 547a0db8c414f41e68a6a92e5b6d842e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 2037670581}
-  usualButton: {fileID: 1703341286}
-  credits_Page: {fileID: 24241402}
 --- !u!114 &492839118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2141,7 +2125,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 492839117}
+      - m_Target: {fileID: 0}
         m_MethodName: about
         m_Mode: 1
         m_Arguments:
@@ -3523,7 +3507,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 492839117}
+      - m_Target: {fileID: 0}
         m_MethodName: privacyPolicy
         m_Mode: 1
         m_Arguments:
@@ -3606,7 +3590,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 223.30014, y: -104.299965}
+  m_AnchoredPosition: {x: 223.30078, y: -104.299805}
   m_SizeDelta: {x: 223, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657676836
@@ -3652,7 +3636,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 492839117}
+      - m_Target: {fileID: 2037670585}
         m_MethodName: resume
         m_Mode: 1
         m_Arguments:
@@ -4831,6 +4815,7 @@ GameObject:
   - component: {fileID: 2037670584}
   - component: {fileID: 2037670583}
   - component: {fileID: 2037670582}
+  - component: {fileID: 2037670585}
   m_Layer: 5
   m_Name: pausemenu
   m_TagString: Untagged
@@ -4902,6 +4887,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2037670585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037670581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547a0db8c414f41e68a6a92e5b6d842e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 2037670581}
+  usualButton: {fileID: 1703341286}
+  credits_Page: {fileID: 308311475}
 --- !u!1 &2048819131
 GameObject:
   m_ObjectHideFlags: 0
