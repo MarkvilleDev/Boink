@@ -9,6 +9,7 @@ public class levelchanger : MonoBehaviour
     public GameObject winCanvas;
     public GameObject usual;
     public GameObject loseCanvas;
+    public GameObject fade;
     public int curScene;
     
     private void Start() {
@@ -17,6 +18,7 @@ public class levelchanger : MonoBehaviour
     }
     public void win()
     {
+        fade.SetActive(true);
         animator.SetTrigger("win");
         Debug.Log("win");
         winCanvas.SetActive(true);
@@ -24,6 +26,7 @@ public class levelchanger : MonoBehaviour
     }
     public void lose() 
     {
+        curScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(curScene);
         // loseCanvas.SetActive(true);
         // winCanvas.SetActive(false);
@@ -40,6 +43,11 @@ public class levelchanger : MonoBehaviour
     }
     public void OnFadeComplete()
     {
-        SceneManager.LoadScene(curScene+1);
+        Debug.Log("move on");
+        SceneManager.LoadScene(curScene + 1);
+    }
+    public void disableCanvas()
+    {
+        fade.SetActive(false);
     }
 }

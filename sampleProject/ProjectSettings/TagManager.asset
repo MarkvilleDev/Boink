@@ -7,6 +7,7 @@ TagManager:
   - Wall
   - DrawnWall
   - levelChanger
+  - whitefadecanvas
   layers:
   - Default
   - TransparentFX
