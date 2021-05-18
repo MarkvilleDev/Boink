@@ -15,6 +15,7 @@ public class drawMech : MonoBehaviour
     public float currentHealth;
 
     public healthMech healthBar;
+    public levelchanger levelChanger;
 
     void Start()
     {
@@ -44,10 +45,19 @@ public class drawMech : MonoBehaviour
                 }
             }
         }
-        
-
+        if (isEmpty(currentHealth)) 
+        {   
+            Debug.Log("lose"); // logs correctly now
+            levelChanger.lose();
+        }
     }
-
+    public bool isEmpty(float health)
+    {
+        if (health < 0) {
+            return true;
+        }
+        return false;
+    }
     void CreateLine(Touch touch)
     {
         currentLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity);
