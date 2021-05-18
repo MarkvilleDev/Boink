@@ -9,19 +9,8 @@ public class drawMech : MonoBehaviour
 
     public LineRenderer lineRenderer;
     public EdgeCollider2D edgeCollider;
-    public List<Vector2> positions;
-
-    public int maxHealth = 100;
-    public float currentHealth;
-
-    public healthMech healthBar;
-
-    void Start()
-    {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-    }
-
+    public List<Vector2> positions; //<-----
+    
     // Update is called once per frame
     void Update()
     {
@@ -68,10 +57,5 @@ public class drawMech : MonoBehaviour
         lineRenderer.positionCount++;
         lineRenderer.SetPosition(lineRenderer.positionCount - 1, newpos);
         edgeCollider.points = positions.ToArray();
-
-        //adjusting healthbar
-        Debug.Log("damage");
-        currentHealth -= 0.5f;
-        healthBar.SetHealth(currentHealth);
     }
 }
