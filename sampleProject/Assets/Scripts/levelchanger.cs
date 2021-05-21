@@ -10,6 +10,7 @@ public class levelchanger : MonoBehaviour
     public GameObject usual;
     public GameObject loseCanvas;
     public GameObject fade;
+    public GameObject saveController;
     public int curScene;
     
     private void Start() {
@@ -23,14 +24,16 @@ public class levelchanger : MonoBehaviour
         Debug.Log("win");
         winCanvas.SetActive(true);
         usual.SetActive(false);
+        saveController.GetComponent<Player>().winLevel(curScene - 4);
+        saveController.GetComponent<Player>().SavePlayer();
     }
     public void lose() 
     {
         curScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(curScene);
-        // loseCanvas.SetActive(true);
-        // winCanvas.SetActive(false);
-        // usual.SetActive(false);
+        loseCanvas.SetActive(true);
+        winCanvas.SetActive(false);
+        usual.SetActive(false);
     }
     public void loadNext() 
     {   

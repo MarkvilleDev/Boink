@@ -179,6 +179,7 @@ MonoBehaviour:
   usual: {fileID: 1703341286}
   loseCanvas: {fileID: 1061277733}
   fade: {fileID: 0}
+  saveController: {fileID: 0}
   curScene: 0
 --- !u!114 &7851669
 MonoBehaviour:
@@ -1892,7 +1893,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.256, y: 0.2137667}
   m_AnchorMax: {x: 0.7506458, y: 0.37600002}
-  m_AnchoredPosition: {x: -1.7427368, y: -0.3999939}
+  m_AnchoredPosition: {x: -1.7427368, y: -0.4000244}
   m_SizeDelta: {x: 5.1813965, y: -3.111023}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763590055
@@ -2902,6 +2903,7 @@ MonoBehaviour:
   usual: {fileID: 1703341286}
   loseCanvas: {fileID: 1061277733}
   fade: {fileID: 0}
+  saveController: {fileID: 0}
   curScene: 0
 --- !u!114 &1061277736
 MonoBehaviour:
@@ -3552,6 +3554,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657676834}
   m_CullTransparentMesh: 0
+--- !u!1 &1660860424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660860426}
+  - component: {fileID: 1660860425}
+  m_Layer: 0
+  m_Name: SaveController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1660860425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660860424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 431426b04d53942568dfbf306cab02de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels: 0000000000000000000000000000000000
+  skins: 00000000000000000000000000
+--- !u!4 &1660860426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660860424}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 990.48834, y: 749.24713, z: -95081.76}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1672600437
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,6 +4657,7 @@ MonoBehaviour:
   usual: {fileID: 1703341286}
   loseCanvas: {fileID: 1061277733}
   fade: {fileID: 2035225704}
+  saveController: {fileID: 1660860424}
   curScene: 0
 --- !u!1 &2036251046
 GameObject:
