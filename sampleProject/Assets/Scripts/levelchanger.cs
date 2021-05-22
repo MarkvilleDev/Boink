@@ -24,7 +24,7 @@ public class levelchanger : MonoBehaviour
         Debug.Log("win");
         winCanvas.SetActive(true);
         usual.SetActive(false);
-        saveController.GetComponent<Player>().winLevel(curScene - 4);
+        saveController.GetComponent<Player>().winLevel(curScene - 3);
         saveController.GetComponent<Player>().SavePlayer();
     }
     public void lose() 
