@@ -53,4 +53,8 @@ public class levelchanger : MonoBehaviour
     {
         fade.SetActive(false);
     }
+    public void goHome() 
+    {
+        SceneManager.LoadScene(1);
+    }
 }
