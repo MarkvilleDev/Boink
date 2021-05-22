@@ -35,15 +35,18 @@ public class mainMenu : MonoBehaviour
     }
     public void Level_1()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(5);
         //GameObject.FindGameObjectWithTag("Music").GetComponent<musicClass>().PlayMusic();
     }
     public void Level_2()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(6);
     }
     public void Level_3()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(7);
     }
 }

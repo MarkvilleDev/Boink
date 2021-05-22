@@ -13,7 +13,7 @@ public class levelchanger : MonoBehaviour
     public GameObject saveController;
     public AudioSource winSound;
     public AudioSource losesound;
-    public AudioSource returntoMenu;
+    // public AudioSource returntoMenu;
     public int curScene;
     
     private void Start() {
@@ -43,15 +43,17 @@ public class levelchanger : MonoBehaviour
     {
         animator.SetTrigger("win");
         Debug.Log("win");
-        Debug.Log(curScene);
+        // Debug.Log(curScene);
         SceneManager.LoadScene(curScene+1);
     }
     public void reset() 
-    {
+    {   
+        curScene = SceneManager.GetActiveScene().buildIndex;
         fade.SetActive(true);
         animator.SetTrigger("win");
-        Debug.Log("win");
+        Debug.Log("reset");
         SceneManager.LoadScene(curScene);
+        Time.timeScale = 1f;
     }
     public void OnFadeComplete()
     {
@@ -64,11 +66,6 @@ public class levelchanger : MonoBehaviour
     }
     public void goHome() 
     {
-        //wait();
         SceneManager.LoadScene(1);
     }
-    //IEnumerator wait()
-    //{
-    //    yield return new WaitForSeconds(3);
-    //}
 }

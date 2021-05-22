@@ -36,12 +36,12 @@ public class pausecomp : MonoBehaviour {
     public void privacyPolicy() {
         // add another canvas for this later
     }
-    public void credits(){
-        // add another canvas for credits
-        usualButton.SetActive(false);
-        credits_Page.SetActive(true);
-        pauseMenuUI.SetActive(false);
-    }
+    // public void credits(){
+    //     // add another canvas for credits
+    //     usualButton.SetActive(false);
+    //     credits_Page.SetActive(true);
+    //     pauseMenuUI.SetActive(false);
+    // }
     public void about() {
         // add something for about as well 
     }
