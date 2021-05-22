@@ -34,7 +34,7 @@ public class levelchanger : MonoBehaviour
     {
         // curScene = SceneManager.GetActiveScene().buildIndex;
         // SceneManager.LoadScene(curScene);
-
+        losesound.Play();
         fade.SetActive(true);
         loseCanvas.SetActive(true);
         winCanvas.SetActive(false);
@@ -65,6 +65,7 @@ public class levelchanger : MonoBehaviour
     }
     public void goHome() 
     {
+        returntoMenu.Play();
         SceneManager.LoadScene(1);
     }
 }
