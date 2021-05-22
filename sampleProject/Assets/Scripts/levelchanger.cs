@@ -11,6 +11,10 @@ public class levelchanger : MonoBehaviour
     public GameObject loseCanvas;
     public GameObject fade;
     public GameObject saveController;
+    public AudioSource winSound;
+    public AudioSource losesound;
+    public AudioSource returntoMenu;
+    public AudioSource pausedSound;
     public int curScene;
     
     private void Start() {
@@ -19,6 +23,7 @@ public class levelchanger : MonoBehaviour
     }
     public void win()
     {
+        winSound.Play();
         winCanvas.SetActive(true);
         fade.SetActive(true);
         usual.SetActive(false);

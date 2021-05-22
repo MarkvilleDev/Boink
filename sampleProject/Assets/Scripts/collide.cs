@@ -29,9 +29,6 @@ public class collide : MonoBehaviour
         Debug.Log(generateRandom());
         GameObject.Destroy(GameObject.FindGameObjectWithTag("DrawnWall"));
         int curIndex = generateRandom();
-        // AudioSource curBounce = GetComponent<AudioSource>();
-        // curBounce.clip = bounce[curIndex];
-        // curBounce.Play();
         bounce[curIndex].Play();
     }
 
