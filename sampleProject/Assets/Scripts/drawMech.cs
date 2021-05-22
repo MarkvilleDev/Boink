@@ -48,6 +48,8 @@ public class drawMech : MonoBehaviour
         if (isEmpty(currentHealth)) 
         {   
             Debug.Log("lose"); // logs correctly now
+            GameObject.FindGameObjectWithTag("Player").SetActive(false);
+            healthBar.SetHealth(0.1f);
             levelChanger.lose();
         }
     }

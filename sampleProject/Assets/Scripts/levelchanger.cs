@@ -19,10 +19,8 @@ public class levelchanger : MonoBehaviour
     }
     public void win()
     {
-        fade.SetActive(true);
-        animator.SetTrigger("win");
-        Debug.Log("win");
         winCanvas.SetActive(true);
+        fade.SetActive(true);
         usual.SetActive(false);
         saveController.GetComponent<Player>().winLevel(curScene - 3);
         saveController.GetComponent<Player>().SavePlayer();
@@ -31,18 +29,24 @@ public class levelchanger : MonoBehaviour
     {
         // curScene = SceneManager.GetActiveScene().buildIndex;
         // SceneManager.LoadScene(curScene);
-        Time.timeScale = 0f;
+
+        fade.SetActive(true);
         loseCanvas.SetActive(true);
         winCanvas.SetActive(false);
         usual.SetActive(false);
     }
     public void loadNext() 
-    {   
+    {
+        animator.SetTrigger("win");
+        Debug.Log("win");
         Debug.Log(curScene);
         SceneManager.LoadScene(curScene+1);
     }
     public void reset() 
     {
+        fade.SetActive(true);
+        animator.SetTrigger("win");
+        Debug.Log("win");
         SceneManager.LoadScene(curScene);
     }
     public void OnFadeComplete()
