@@ -181,7 +181,6 @@ MonoBehaviour:
   winSound: {fileID: 419565372}
   losesound: {fileID: 399319270}
   returntoMenu: {fileID: 1131076528}
-  pausedSound: {fileID: 768956716}
   curScene: 0
 --- !u!114 &7851669
 MonoBehaviour:
@@ -1223,6 +1222,7 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 2037670581}
   usualButton: {fileID: 1703341286}
   credits_Page: {fileID: 308311475}
+  pausemenu: {fileID: 768956716}
 --- !u!114 &308311478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4264,7 +4264,6 @@ MonoBehaviour:
   winSound: {fileID: 419565372}
   losesound: {fileID: 399319270}
   returntoMenu: {fileID: 1131076528}
-  pausedSound: {fileID: 768956716}
   curScene: 0
 --- !u!114 &1061277736
 MonoBehaviour:
@@ -5731,6 +5730,7 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 2037670581}
   usualButton: {fileID: 1703341286}
   credits_Page: {fileID: 308311475}
+  pausemenu: {fileID: 768956716}
 --- !u!114 &1703341288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6826,7 +6826,6 @@ MonoBehaviour:
   winSound: {fileID: 419565372}
   losesound: {fileID: 399319270}
   returntoMenu: {fileID: 1131076528}
-  pausedSound: {fileID: 768956716}
   curScene: 0
 --- !u!1 &2036251046
 GameObject:
@@ -7062,6 +7061,7 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 2037670581}
   usualButton: {fileID: 1703341286}
   credits_Page: {fileID: 308311475}
+  pausemenu: {fileID: 768956716}
 --- !u!1 &2048819131
 GameObject:
   m_ObjectHideFlags: 0
