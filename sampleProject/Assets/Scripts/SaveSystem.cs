@@ -6,10 +6,10 @@ public static class SaveSystem
 {
     public static void SavePlayer (Player player)
     {
-        for (int i = 0; i < player.man.Length; i++)
-        {
-            Debug.Log(player.man[i]);
-        }
+        //for (int i = 0; i < player.man.Length; i++)
+        //{
+        //    Debug.Log(player.man[i]);
+        //}
 
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/player.savedData";
@@ -33,10 +33,10 @@ public static class SaveSystem
 
             playerData data = formatter.Deserialize(stream) as playerData;
 
-            for (int i = 0; i < data.levels.Length; i++)
-            {
-                Debug.Log(data.levels[i]);
-            }
+            //for (int i = 0; i < data.levels.Length; i++)
+            //{
+            //    Debug.Log(data.levels[i]);
+            //}
 
             stream.Close();
             Debug.Log("successfully loaded");

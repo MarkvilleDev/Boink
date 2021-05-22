@@ -11,16 +11,16 @@ public class playerData
 
     public playerData (Player player)
     {
-        levels = new bool[player.man.Length];
-        skins = new bool[player.woman.Length];
+        levels = new bool[player.levels.Length];
+        skins = new bool[player.levels.Length];
 
-        for (int i=0;i<player.man.Length; i++)
+        for (int i=0;i<player.levels.Length; i++)
         {
-            levels[i] = player.man[i];
+            levels[i] = player.levels[i];
         }
-        for (int i = 0; i < player.woman.Length; i++)
+        for (int i = 0; i < player.levels.Length; i++)
         {
-            skins[i] = player.woman[i];
+            skins[i] = player.levels[i];
         }
     }
 
