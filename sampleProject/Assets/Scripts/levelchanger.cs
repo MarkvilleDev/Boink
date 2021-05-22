@@ -29,8 +29,9 @@ public class levelchanger : MonoBehaviour
     }
     public void lose() 
     {
-        curScene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(curScene);
+        // curScene = SceneManager.GetActiveScene().buildIndex;
+        // SceneManager.LoadScene(curScene);
+        Time.timeScale = 0f;
         loseCanvas.SetActive(true);
         winCanvas.SetActive(false);
         usual.SetActive(false);
