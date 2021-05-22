@@ -172,12 +172,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e92e60cf9504c47ec8e8a3066ba99273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 2035225705}
   winCanvas: {fileID: 7851666}
   usual: {fileID: 1703341286}
   loseCanvas: {fileID: 1061277733}
-  fade: {fileID: 0}
-  saveController: {fileID: 0}
+  fade: {fileID: 2035225704}
+  saveController: {fileID: 1660860424}
   curScene: 0
 --- !u!114 &7851669
 MonoBehaviour:
@@ -3428,12 +3428,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e92e60cf9504c47ec8e8a3066ba99273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 2035225705}
   winCanvas: {fileID: 7851666}
   usual: {fileID: 1703341286}
   loseCanvas: {fileID: 1061277733}
-  fade: {fileID: 0}
-  saveController: {fileID: 0}
+  fade: {fileID: 2035225704}
+  saveController: {fileID: 1660860424}
   curScene: 0
 --- !u!114 &1061277736
 MonoBehaviour:
