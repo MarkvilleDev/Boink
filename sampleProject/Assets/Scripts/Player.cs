@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public bool[] man = new bool [17];
-    public bool[] woman = new bool[13];
-
+    public bool[] man;
+    public bool[] woman;
 
     public void winLevel (int num)
     {
@@ -25,6 +24,8 @@ public class Player : MonoBehaviour
     public void LoadPlayer ()
     {
         playerData data = SaveSystem.LoadPlayer();
+        man = new bool[22];
+        woman = new bool[22];
 
         for (int i = 0; i < data.levels.Length; i++)
         {
@@ -35,6 +36,8 @@ public class Player : MonoBehaviour
         for (int i = 0; i < data.levels.Length; i++)
         {
             man[i] = data.levels[i];
+            Debug.Log("data " + data.levels[i]);
+            Debug.Log("man " + man[i]);
         }
         for (int i = 0; i < data.skins.Length; i++)
         {
