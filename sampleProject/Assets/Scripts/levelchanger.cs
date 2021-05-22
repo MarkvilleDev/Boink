@@ -14,7 +14,6 @@ public class levelchanger : MonoBehaviour
     public AudioSource winSound;
     public AudioSource losesound;
     public AudioSource returntoMenu;
-    public AudioSource pausedSound;
     public int curScene;
     
     private void Start() {
@@ -66,6 +65,11 @@ public class levelchanger : MonoBehaviour
     public void goHome() 
     {
         returntoMenu.Play();
+        wait();
         SceneManager.LoadScene(1);
+    }
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(3);
     }
 }

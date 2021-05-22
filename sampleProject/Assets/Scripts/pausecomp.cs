@@ -6,6 +6,7 @@ public class pausecomp : MonoBehaviour {
     public GameObject pauseMenuUI;
     public GameObject usualButton;
     public GameObject credits_Page;
+    public AudioSource pausemenu;
     // public void Setup() {
     //     // normal screen on, pause screen off
     //     usualButton.SetActive(true);
@@ -14,6 +15,7 @@ public class pausecomp : MonoBehaviour {
     // }
     public void pausegame() {
         // usual off, pause on
+        pausemenu.Play();
         pauseMenuUI.SetActive(true);
         usualButton.SetActive(false);
         credits_Page.SetActive(false);
