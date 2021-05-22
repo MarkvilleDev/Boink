@@ -36,6 +36,7 @@ public class mainMenu : MonoBehaviour
     public void Level_1()
     {
         SceneManager.LoadScene(5);
+        //GameObject.FindGameObjectWithTag("Music").GetComponent<musicClass>().PlayMusic();
     }
     public void Level_2()
     {

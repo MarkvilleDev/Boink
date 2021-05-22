@@ -8,6 +8,9 @@ TagManager:
   - DrawnWall
   - levelChanger
   - whitefadecanvas
+  - Music
+  - mainStartButton
+  - backToMenu
   layers:
   - Default
   - TransparentFX

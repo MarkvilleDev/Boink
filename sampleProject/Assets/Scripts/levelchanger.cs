@@ -64,12 +64,11 @@ public class levelchanger : MonoBehaviour
     }
     public void goHome() 
     {
-        returntoMenu.Play();
-        wait();
+        //wait();
         SceneManager.LoadScene(1);
     }
-    IEnumerator wait()
-    {
-        yield return new WaitForSeconds(3);
-    }
+    //IEnumerator wait()
+    //{
+    //    yield return new WaitForSeconds(3);
+    //}
 }

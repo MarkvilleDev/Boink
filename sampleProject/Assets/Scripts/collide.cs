@@ -10,25 +10,31 @@ public class collide : MonoBehaviour
     public AudioSource[] bounce = new AudioSource[6];
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("DrawnWall") || collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.CompareTag("DrawnWall"))
         {
-            hit();
+            hitDrawn();
         }
         if (collision.gameObject.CompareTag("Finish"))
         {
             GameObject.FindGameObjectWithTag("Player").SetActive(false);
             lvlchngscript.GetComponent<levelchanger>().win();
         }
+        else {
+            int curIndex = generateRandom();
+            Debug.Log(curIndex);
+            bounce[curIndex].Play();
+        }
+
     }
     public int generateRandom() {
-        int index = Random.Range(0,7);
+        int index = Random.Range(0,6);
         return index;
     }
-    private void hit()
+    private void hitDrawn()
     {
-        Debug.Log(generateRandom());
         GameObject.Destroy(GameObject.FindGameObjectWithTag("DrawnWall"));
         int curIndex = generateRandom();
+        Debug.Log(curIndex);
         bounce[curIndex].Play();
     }
 
