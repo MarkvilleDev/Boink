@@ -151,11 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1e224665c6d94f4f8f739e9ecae383a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
-  usualButton: {fileID: 0}
-  credits_Page: {fileID: 0}
-  pausemenu: {fileID: 0}
-  paused: 0
 --- !u!82 &6470016
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1453,7 +1448,6 @@ MonoBehaviour:
   usualButton: {fileID: 1703341286}
   credits_Page: {fileID: 308311475}
   pausemenu: {fileID: 768956716}
-  paused: 0
 --- !u!114 &308311478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5737,7 +5731,6 @@ MonoBehaviour:
   usualButton: {fileID: 1703341286}
   credits_Page: {fileID: 308311475}
   pausemenu: {fileID: 768956716}
-  paused: 0
 --- !u!114 &1703341288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7271,7 +7264,6 @@ MonoBehaviour:
   usualButton: {fileID: 1703341286}
   credits_Page: {fileID: 308311475}
   pausemenu: {fileID: 768956716}
-  paused: 0
 --- !u!1 &2044969993
 GameObject:
   m_ObjectHideFlags: 0
@@ -7554,12 +7546,12 @@ PrefabInstance:
     - target: {fileID: 8800396621563660073, guid: 29ff64cfc93d74cdb9ece197b11368cf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 200
+      value: 900.6
       objectReference: {fileID: 0}
     - target: {fileID: 8800396621563660073, guid: 29ff64cfc93d74cdb9ece197b11368cf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 886
+      value: 614.3
       objectReference: {fileID: 0}
     - target: {fileID: 8800396621563660073, guid: 29ff64cfc93d74cdb9ece197b11368cf,
         type: 3}
