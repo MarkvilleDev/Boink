@@ -2,27 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pausecomp : MonoBehaviour {
+public class pausecomp : MonoBehaviour 
+    {
     public GameObject pauseMenuUI;
     public GameObject usualButton;
     public GameObject credits_Page;
     public AudioSource pausemenu;
+    public bool paused;
     // public void Setup() {
     //     // normal screen on, pause screen off
     //     usualButton.SetActive(true);
     //     pauseMenuUI.SetActive(false);
     //     credits_Page.SetActive(false);
     // }
-    public void pausegame() {
+    public void pausegame() 
+    {
         // usual off, pause on
+        paused = true;
         pausemenu.Play();
+        // Debug.Log(paused);
         pauseMenuUI.SetActive(true);
         usualButton.SetActive(false);
         credits_Page.SetActive(false);
         Time.timeScale = 0f;
     }
-    public void resume() {
+    public void resume() 
+    {
         // if u press the back ig
+        paused = false;
         pauseMenuUI.SetActive(false);
         usualButton.SetActive(true);
         credits_Page.SetActive(false);

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class musicClass : MonoBehaviour
+public class musicClass : pausecomp 
 {
     private AudioSource _audioSource;
     private GameObject[] other;
@@ -25,6 +25,19 @@ public class musicClass : MonoBehaviour
         }
         DontDestroyOnLoad(transform.gameObject);
         _audioSource = GetComponent<AudioSource>();
+    }
+    private void Update() 
+    {
+        // why doesnt this work????
+        if (paused)
+        {
+            Debug.Log("hi");
+            _audioSource.volume = 0f;
+        } else 
+        {
+            // Debug.Log("updating");
+            _audioSource.volume = 1f;
+        }
     }
 
     public void PlayMusic()
