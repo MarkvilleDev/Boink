@@ -4,14 +4,26 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public bool[] levels = new bool [17];
-    public bool[] skins = new bool [13];
+    public bool[] levels;
+    public bool[] skins;
     public int test;
     public int test2;
 
+    //public void Start()
+    //{
+    //    //just some code to reset things
+    //    for (int i = 0; i < levels.Length; i++)
+    //    {
+    //        levels[i] = false;
+    //        SavePlayer();
+    //    }
+    //}
+
     public void winLevel (int num)
     {
-        levels[num] = true;
+        LoadPlayer();
+        levels[num+1] = true;
+        SavePlayer();
     }
     public void unlockSkin(int num)
     {
@@ -29,17 +41,10 @@ public class Player : MonoBehaviour
         test = data.levels.Length;
         test2 = data.skins.Length;
 
-        //for (int i = 0; i < data.levels.Length; i++)
-        //{
-        //    Debug.Log(data.levels[i]);
-        //}
-
         Debug.Log("load");
         for (int i = 0; i < data.levels.Length; i++)
         {
             levels[i] = data.levels[i];
-            //Debug.Log("data " + data.levels[i]);
-            //Debug.Log("man " + man[i]);
         }
 
         Debug.Log(test);
@@ -48,10 +53,5 @@ public class Player : MonoBehaviour
         {
             skins[i] = data.skins[i];
         }
-    }
-
-    public void Update()
-    {
-        
     }
 }

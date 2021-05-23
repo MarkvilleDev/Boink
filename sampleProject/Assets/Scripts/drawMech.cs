@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class drawMech : MonoBehaviour
 {
     public GameObject linePrefab;
     public GameObject currentLine;
+    public int[] health = new int [17];
 
     public LineRenderer lineRenderer;
     public EdgeCollider2D edgeCollider;
     public List<Vector2> positions;
 
-    public int maxHealth = 100;
+    public int maxHealth;
     public float currentHealth;
 
     public healthMech healthBar;
@@ -19,6 +21,13 @@ public class drawMech : MonoBehaviour
 
     void Start()
     {
+        health[0] = 10;
+        health[1] = 20;
+        health[2] = 200;
+        health[3] = 100;
+
+
+        maxHealth = health[SceneManager.GetActiveScene().buildIndex - 5];
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }

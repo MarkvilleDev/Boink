@@ -21,15 +21,36 @@ EditorBuildSettings:
     path: Assets/Scenes/skinselector.unity
     guid: 11720c7f2b25a42fd99769381ff2c829
   - enabled: 1
-    path: Assets/Scenes/level 1.unity
-    guid: 08ac33ca5c8574a7182a66291c0fa65a
+    path: Assets/Scenes/template level 0.unity
+    guid: bc149fd051bd04ccabb9e22c3c8bc3d7
   - enabled: 1
-    path: Assets/Scenes/level 2.unity
-    guid: e822f1346f5df40d1aefc2087266d559
+    path: Assets/Scenes/template level 1.unity
+    guid: 7f85eac05bf714ec9992066ffc08c8e9
   - enabled: 1
-    path: Assets/Scenes/level 3.unity
-    guid: 4cbcbedb92f774d1bb9a6b385cac22da
+    path: Assets/Scenes/template level 2.unity
+    guid: 564efef17ca4147379e16aa43a4f5925
   - enabled: 1
-    path: Assets/Scenes/sarinalevel 4.unity
-    guid: ff08491761d92473d81c6c49ec7bcc2a
+    path: Assets/Scenes/template level 3.unity
+    guid: 1addd799d8a034d34aeb16ee3ab03428
+  - enabled: 1
+    path: Assets/Scenes/template level 4.unity
+    guid: ddaf6967ddfd440d88e488d06ac08625
+  - enabled: 1
+    path: Assets/Scenes/template level 5.unity
+    guid: 0c7baa5998882447eb51b5db064b22d5
+  - enabled: 1
+    path: Assets/Scenes/template level 6.unity
+    guid: d227a1089521541b796e465cb2a83207
+  - enabled: 1
+    path: Assets/Scenes/template level 7.unity
+    guid: df4136fb1b1f847be8694269167391ef
+  - enabled: 1
+    path: Assets/Scenes/template level 8.unity
+    guid: c5be76ae166ae44c09c0a281a3052e40
+  - enabled: 1
+    path: Assets/Scenes/template level 9.unity
+    guid: 28b52eff793984cd9a9ce1fd17dc68bf
+  - enabled: 1
+    path: Assets/Scenes/template level 10.unity
+    guid: bb6d078cba39945159586e85b14a5c2b
   m_configObjects: {}
