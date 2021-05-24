@@ -444,7 +444,6 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 1472270442}
   usualButton: {fileID: 358080077}
   credits_Page: {fileID: 1275503414}
-  pausemenu: {fileID: 0}
 --- !u!1 &237750345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1147,6 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 1472270442}
   usualButton: {fileID: 358080077}
   credits_Page: {fileID: 1275503414}
-  pausemenu: {fileID: 0}
 --- !u!114 &358080080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2626,9 +2624,6 @@ MonoBehaviour:
   usual: {fileID: 0}
   loseCanvas: {fileID: 0}
   fade: {fileID: 872795710}
-  saveController: {fileID: 0}
-  winSound: {fileID: 0}
-  losesound: {fileID: 0}
   curScene: 0
 --- !u!95 &872795712
 Animator:
@@ -3566,7 +3561,6 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 1472270442}
   usualButton: {fileID: 358080077}
   credits_Page: {fileID: 1275503414}
-  pausemenu: {fileID: 0}
 --- !u!114 &1275503417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4962,7 +4956,6 @@ MonoBehaviour:
   linePrefab: {fileID: 6321928483608619888, guid: 3588dbba7adbf4fff91b192011c1ce95,
     type: 3}
   currentLine: {fileID: 0}
-  health: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   lineRenderer: {fileID: 0}
   edgeCollider: {fileID: 0}
   positions: []
@@ -5016,7 +5009,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linePrefab: {fileID: 0}
   currentLine: {fileID: 0}
-  health: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   lineRenderer: {fileID: 0}
   edgeCollider: {fileID: 0}
   positions: []
