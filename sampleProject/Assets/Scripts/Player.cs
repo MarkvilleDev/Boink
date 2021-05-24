@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public bool[] skins;
     public int test;
     public int test2;
+    public bool ismuted;
 
     //public void Start()
     //{
@@ -53,5 +54,15 @@ public class Player : MonoBehaviour
         {
             skins[i] = data.skins[i];
         }
+    }
+    public void mute(){
+        ismuted = true;
+        SavePlayer();
+        LoadPlayer();
+    }
+    public void unmute(){
+        ismuted =false;
+        SavePlayer();
+        LoadPlayer();
     }
 }
