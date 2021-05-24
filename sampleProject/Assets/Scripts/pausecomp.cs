@@ -7,6 +7,8 @@ public class pausecomp : MonoBehaviour {
     public GameObject usualButton;
     public GameObject credits_Page;
     public AudioSource pausemenu;
+    public GameObject audiomanager;
+
     // public void Setup() {
     //     // normal screen on, pause screen off
     //     usualButton.SetActive(true);
@@ -16,6 +18,8 @@ public class pausecomp : MonoBehaviour {
     public void pausegame() {
         // usual off, pause on
         pauseMenuUI.SetActive(true);
+        audiomanager = GameObject.FindGameObjectWithTag("audiomanager");
+        audiomanager.GetComponent<buttonAudManager>().muting();
         usualButton.SetActive(false);
         credits_Page.SetActive(false);
         Time.timeScale = 0f;
@@ -29,6 +33,8 @@ public class pausecomp : MonoBehaviour {
     }
     public void back_toPause(){
         pauseMenuUI.SetActive(true);
+        audiomanager = GameObject.FindGameObjectWithTag("audiomanager");
+        audiomanager.GetComponent<buttonAudManager>().muting();
         usualButton.SetActive(false);
         credits_Page.SetActive(false);
     }

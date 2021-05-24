@@ -21,6 +21,7 @@ TagManager:
   - savecontroller
   - mute
   - unmute
+  - levelchanger
   layers:
   - Default
   - TransparentFX
