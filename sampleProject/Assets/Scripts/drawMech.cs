@@ -18,6 +18,7 @@ public class drawMech : MonoBehaviour
 
     public healthMech healthBar;
     public levelchanger levelChanger;
+    public bool firstlose;
 
     void Start()
     {
@@ -26,6 +27,7 @@ public class drawMech : MonoBehaviour
         health[2] = 200;
         health[3] = 100;
 
+        firstlose = true;
 
         maxHealth = health[SceneManager.GetActiveScene().buildIndex - 5];
         currentHealth = maxHealth;
@@ -54,8 +56,9 @@ public class drawMech : MonoBehaviour
                 }
             }
         }
-        if (isEmpty(currentHealth)) 
-        {   
+        if (isEmpty(currentHealth) && firstlose) 
+        {
+            firstlose = false;
             Debug.Log("lose"); // logs correctly now
             GameObject.FindGameObjectWithTag("Player").SetActive(false);
             healthBar.SetHealth(0.1f);
@@ -91,7 +94,7 @@ public class drawMech : MonoBehaviour
         edgeCollider.points = positions.ToArray();
 
         //adjusting healthbar
-        Debug.Log("damage");
+        //Debug.Log("damage");
         currentHealth -= 0.5f;
         healthBar.SetHealth(currentHealth);
 

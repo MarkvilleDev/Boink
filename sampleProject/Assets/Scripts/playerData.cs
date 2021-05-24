@@ -8,6 +8,7 @@ public class playerData
 {
     public bool[] levels;
     public bool[] skins;
+    public bool ismuted;
 
     public playerData (Player player)
     {
@@ -22,6 +23,8 @@ public class playerData
         {
             skins[i] = player.skins[i];
         }
+
+        ismuted = player.ismuted;
     }
 
 }

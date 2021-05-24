@@ -10,7 +10,7 @@ public class healthMech : MonoBehaviour
 
     public void SetMaxHealth(float health)
     {
-        Debug.Log("set max health");
+        //Debug.Log("set max health");
         slider.maxValue = health;
         slider.value = health;
     }
@@ -18,6 +18,6 @@ public class healthMech : MonoBehaviour
     public void SetHealth(float health)
     {
         slider.value = health;
-        Debug.Log("Took Damage");
+        //Debug.Log("Took Damage");
     }
 }

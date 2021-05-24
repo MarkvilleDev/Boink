@@ -11,8 +11,7 @@ public class levelchanger : MonoBehaviour
     public GameObject loseCanvas;
     public GameObject fade;
     public GameObject saveController;
-    public AudioSource winSound;
-    public AudioSource losesound;
+    public GameObject audioManager;
     // public AudioSource returntoMenu;
     public int curScene;
     
@@ -22,7 +21,8 @@ public class levelchanger : MonoBehaviour
     }
     public void win()
     {
-        winSound.Play();
+        audioManager = GameObject.FindGameObjectWithTag("audiomanager");
+        audioManager.GetComponent<buttonAudManager>().Playwin();
         winCanvas.SetActive(true);
         fade.SetActive(true);
         usual.SetActive(false);
@@ -33,7 +33,9 @@ public class levelchanger : MonoBehaviour
     {
         // curScene = SceneManager.GetActiveScene().buildIndex;
         // SceneManager.LoadScene(curScene);
-        losesound.Play();
+        Debug.Log("you lose");
+        audioManager = GameObject.FindGameObjectWithTag("audiomanager");
+        audioManager.GetComponent<buttonAudManager>().losegamesound();
         fade.SetActive(true);
         loseCanvas.SetActive(true);
         winCanvas.SetActive(false);

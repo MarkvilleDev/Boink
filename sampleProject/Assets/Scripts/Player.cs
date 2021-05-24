@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public bool[] skins;
     public int test;
     public int test2;
+    public bool ismuted;
 
     //public void Start()
     //{
@@ -40,6 +41,7 @@ public class Player : MonoBehaviour
         playerData data = SaveSystem.LoadPlayer();
         test = data.levels.Length;
         test2 = data.skins.Length;
+        ismuted = data.ismuted;
 
         Debug.Log("load");
         for (int i = 0; i < data.levels.Length; i++)
@@ -53,5 +55,17 @@ public class Player : MonoBehaviour
         {
             skins[i] = data.skins[i];
         }
+    }
+    public void mute()
+    {
+        ismuted = true;
+        SavePlayer();
+        LoadPlayer();
+    }
+    public void unmute()
+    {
+        ismuted = false;
+        SavePlayer();
+        LoadPlayer();
     }
 }

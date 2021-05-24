@@ -11,6 +11,16 @@ TagManager:
   - Music
   - mainStartButton
   - backToMenu
+  - bouncesound
+  - winsound
+  - losesound
+  - pausemenuopen
+  - levelstart
+  - masteraudio
+  - audiomanager
+  - savecontroller
+  - mute
+  - unmute
   layers:
   - Default
   - TransparentFX

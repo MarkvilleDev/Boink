@@ -15,7 +15,6 @@ public class pausecomp : MonoBehaviour {
     // }
     public void pausegame() {
         // usual off, pause on
-        pausemenu.Play();
         pauseMenuUI.SetActive(true);
         usualButton.SetActive(false);
         credits_Page.SetActive(false);
