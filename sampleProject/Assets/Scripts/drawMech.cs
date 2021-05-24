@@ -54,23 +54,17 @@ public class drawMech : MonoBehaviour
                 }
             }
         }
-        // Debug.Log("is empty" + isEmpty(currentHealth));
         if (isEmpty(currentHealth)) 
         {   
-           // logs correctly now
-            // GameObject.FindGameObjectWithTag("DrawnwWall").SetActive(false);
-            Debug.Log("before lose");
-            levelChanger.lose();
-            Debug.Log("After Lose");
+            Debug.Log("lose"); // logs correctly now
             GameObject.FindGameObjectWithTag("Player").SetActive(false);
             healthBar.SetHealth(0.1f);
-            currentHealth = 1f;
-            Debug.Log("u lose"); 
+            levelChanger.lose();
         }
     }
     public bool isEmpty(float health)
     {
-        if (health <= 0) {
+        if (health < 0) {
             return true;
         }
         return false;
@@ -97,7 +91,7 @@ public class drawMech : MonoBehaviour
         edgeCollider.points = positions.ToArray();
 
         //adjusting healthbar
-        Debug.Log(currentHealth);
+        Debug.Log("damage");
         currentHealth -= 0.5f;
         healthBar.SetHealth(currentHealth);
 

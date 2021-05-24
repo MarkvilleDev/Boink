@@ -1707,17 +1707,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1653270888}
-        m_MethodName: pausemenusound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &323173956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1932,7 +1921,7 @@ GameObject:
   - component: {fileID: 399319270}
   m_Layer: 0
   m_Name: losesound
-  m_TagString: losesound
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1977,7 +1966,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 1
+  BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2059,7 +2048,7 @@ GameObject:
   - component: {fileID: 419565372}
   m_Layer: 0
   m_Name: winsound
-  m_TagString: winsound
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2565,7 +2554,7 @@ GameObject:
   - component: {fileID: 558839168}
   m_Layer: 0
   m_Name: Audio Source (4)
-  m_TagString: bouncesound
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2766,7 +2755,7 @@ GameObject:
   - component: {fileID: 625887934}
   m_Layer: 0
   m_Name: Audio Source (3)
-  m_TagString: bouncesound
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3252,7 +3241,7 @@ GameObject:
   - component: {fileID: 768956716}
   m_Layer: 0
   m_Name: pausemenuopen
-  m_TagString: pausemenuopen
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4079,6 +4068,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1736069224}
         m_MethodName: SetActive
         m_Mode: 6
@@ -4090,9 +4090,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1660860425}
-        m_MethodName: unmute
-        m_Mode: 1
+      - m_Target: {fileID: 1037024186}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4161,7 +4161,7 @@ GameObject:
   - component: {fileID: 1022260901}
   m_Layer: 0
   m_Name: Audio Source (2)
-  m_TagString: bouncesound
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4285,27 +4285,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1037024188}
-  - component: {fileID: 1037024187}
   m_Layer: 0
   m_Name: audios
-  m_TagString: masteraudio
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1037024187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1037024186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca78f115a99324e9b8dce9aa36eedea7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  savecontroller: {fileID: 0}
 --- !u!4 &1037024188
 Transform:
   m_ObjectHideFlags: 0
@@ -4329,9 +4315,10 @@ Transform:
   - {fileID: 1085968779}
   - {fileID: 6470017}
   - {fileID: 1967451393}
+  - {fileID: 1653270889}
   - {fileID: 1764203304}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1042962950
 GameObject:
@@ -5219,7 +5206,7 @@ GameObject:
   - component: {fileID: 1586916799}
   m_Layer: 0
   m_Name: Audio Source
-  m_TagString: bouncesound
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5498,7 +5485,7 @@ GameObject:
   - component: {fileID: 1653270888}
   m_Layer: 0
   m_Name: buttonAudioManager
-  m_TagString: audiomanager
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5518,12 +5505,6 @@ MonoBehaviour:
   menuMusic: {fileID: 0}
   mainStart: {fileID: 0}
   backToMenuMusic: {fileID: 0}
-  bouncesounds: []
-  winsound: {fileID: 0}
-  losesound: {fileID: 0}
-  menusound: {fileID: 0}
-  levelstart: {fileID: 0}
-  masteraudioobject: {fileID: 0}
 --- !u!4 &1653270889
 Transform:
   m_ObjectHideFlags: 0
@@ -5532,11 +5513,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653270886}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1263.8053, y: 1237.3202, z: -8810.086}
+  m_LocalPosition: {x: 582.0858, y: 941.0117, z: -4667.9307}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 1037024188}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1657676834
 GameObject:
@@ -5679,7 +5660,7 @@ GameObject:
   - component: {fileID: 1660860425}
   m_Layer: 0
   m_Name: SaveController
-  m_TagString: savecontroller
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5700,7 +5681,6 @@ MonoBehaviour:
   skins: 00000000000000000000000000
   test: 0
   test2: 0
-  ismuted: 0
 --- !u!4 &1660860426
 Transform:
   m_ObjectHideFlags: 0
@@ -5861,7 +5841,7 @@ GameObject:
   - component: {fileID: 1676905239}
   m_Layer: 0
   m_Name: Audio Source (5)
-  m_TagString: bouncesound
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6130,6 +6110,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1736069224}
         m_MethodName: SetActive
         m_Mode: 6
@@ -6152,9 +6143,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1660860425}
-        m_MethodName: mute
-        m_Mode: 1
+      - m_Target: {fileID: 1037024186}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6231,7 +6222,7 @@ GameObject:
   - component: {fileID: 1736082424}
   m_Layer: 0
   m_Name: Audio Source (1)
-  m_TagString: bouncesound
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6553,7 +6544,7 @@ GameObject:
   - component: {fileID: 1764203305}
   m_Layer: 0
   m_Name: levelStarts
-  m_TagString: levelstart
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6570,7 +6561,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1037024188}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1764203305
 AudioSource:

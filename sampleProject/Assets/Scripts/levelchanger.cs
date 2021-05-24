@@ -12,7 +12,7 @@ public class levelchanger : MonoBehaviour
     public GameObject fade;
     public GameObject saveController;
     public AudioSource winSound;
-    public GameObject losesound;
+    public AudioSource losesound;
     // public AudioSource returntoMenu;
     public int curScene;
     
@@ -22,27 +22,22 @@ public class levelchanger : MonoBehaviour
     }
     public void win()
     {
-        // winSound.Play();
+        winSound.Play();
         winCanvas.SetActive(true);
         fade.SetActive(true);
         usual.SetActive(false);
         saveController.GetComponent<Player>().winLevel(curScene - 5);
         saveController.GetComponent<Player>().SavePlayer();
-        Time.timeScale = 0f;
     }
     public void lose() 
     {
         // curScene = SceneManager.GetActiveScene().buildIndex;
-        // SceneManager.LoadScene(curScene)
-        Debug.Log("u suck");
-        // losesound = GameObject.FindGameObjectWithTag("audiomanager");
-        // losesound.GetComponent<buttonAudManager>().losegamesound();
+        // SceneManager.LoadScene(curScene);
+        losesound.Play();
         fade.SetActive(true);
         loseCanvas.SetActive(true);
         winCanvas.SetActive(false);
         usual.SetActive(false);
-        animator.SetTrigger("win");
-        // Time.timeScale = 0f;
     }
     public void loadNext() 
     {
