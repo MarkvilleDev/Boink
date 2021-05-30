@@ -300,9 +300,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 97672870}
-  winCanvas: {fileID: 0}
+  winCanvas: {fileID: 1166475244}
   usual: {fileID: 613207001}
-  loseCanvas: {fileID: 0}
+  loseCanvas: {fileID: 2114157811}
   fade: {fileID: 97672869}
   saveController: {fileID: 1196863514}
   audioManager: {fileID: 0}

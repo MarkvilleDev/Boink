@@ -748,7 +748,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 761201946}
   usualButton: {fileID: 154748202}
-  credits_Page: {fileID: 147603466}
   pausemenu: {fileID: 0}
   audiomanager: {fileID: 0}
 --- !u!114 &147603468
@@ -941,7 +940,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 761201946}
   usualButton: {fileID: 154748202}
-  credits_Page: {fileID: 147603466}
   pausemenu: {fileID: 0}
   audiomanager: {fileID: 0}
 --- !u!114 &154748204
@@ -3439,7 +3437,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 761201946}
   usualButton: {fileID: 154748202}
-  credits_Page: {fileID: 147603466}
   pausemenu: {fileID: 0}
   audiomanager: {fileID: 0}
 --- !u!114 &761201949
