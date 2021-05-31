@@ -1768,9 +1768,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1896065862}
   usualButton: {fileID: 331205753}
-  credits_Page: {fileID: 771611741}
   pausemenu: {fileID: 0}
   audiomanager: {fileID: 0}
+  gameController: {fileID: 838002989}
 --- !u!114 &331205755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3134,9 +3134,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1896065862}
   usualButton: {fileID: 331205753}
-  credits_Page: {fileID: 771611741}
   pausemenu: {fileID: 0}
   audiomanager: {fileID: 0}
+  gameController: {fileID: 0}
 --- !u!114 &771611743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5616,7 +5616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 158dd2a7e88d04143bfc50ca44b37313, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7fd07d01e31f24d01942933d8a232e27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5972,7 +5972,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.95, y: 0.95}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6020,7 +6020,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 7b7a7a8eca18b43899b8d12aa6537b83, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65216f64baa6b4f37a5f29381fade869, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6864,9 +6864,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1896065862}
   usualButton: {fileID: 331205753}
-  credits_Page: {fileID: 771611741}
   pausemenu: {fileID: 0}
   audiomanager: {fileID: 0}
+  gameController: {fileID: 838002989}
 --- !u!114 &1896065865
 MonoBehaviour:
   m_ObjectHideFlags: 0
