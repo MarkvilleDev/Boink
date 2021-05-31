@@ -10,15 +10,15 @@ public class Player : MonoBehaviour
     public int test2;
     public bool ismuted;
 
-    //public void Start()
-    //{
-    //    //just some code to reset things
-    //    for (int i = 0; i < levels.Length; i++)
-    //    {
-    //        levels[i] = false;
-    //        SavePlayer();
-    //    }
-    //}
+    public void Start()
+    {
+        //just some code to reset things
+        for (int i = 0; i < levels.Length; i++)
+        {
+            levels[i] = false;
+            SavePlayer();
+        }
+    }
 
     public void winLevel (int num)
     {
