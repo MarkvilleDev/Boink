@@ -467,8 +467,6 @@ MonoBehaviour:
   levelstart: {fileID: 0}
   masteraudioobject: {fileID: 0}
   savecontroller: {fileID: 0}
-  mute: {fileID: 0}
-  unmute: {fileID: 0}
 --- !u!4 &289869070
 Transform:
   m_ObjectHideFlags: 0
@@ -3349,8 +3347,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431426b04d53942568dfbf306cab02de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levels: 0000000000000000000000000000000000000000
-  skins: 0000000000000000000000000000000000000000
+  levels: 0000000000000000000000000000000000
+  skins: 00000000000000000000000000
   test: 0
   test2: 0
   ismuted: 0
