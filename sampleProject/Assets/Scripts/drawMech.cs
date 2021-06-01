@@ -7,7 +7,7 @@ public class drawMech : MonoBehaviour
 {
     public GameObject linePrefab;
     public GameObject currentLine;
-    public int[] health = new int [17];
+    public int[] health;
 
     public LineRenderer lineRenderer;
     public EdgeCollider2D edgeCollider;
@@ -22,16 +22,21 @@ public class drawMech : MonoBehaviour
 
     void Start()
     {
+        health = new int[30];
         health[0] = 10;
         health[1] = 20;
         health[2] = 200;
         health[3] = 100;
-
+        Debug.Log("hello");
+        Debug.Log(health.Length);
+        health[17] = 100;
+        
         firstlose = true;
 
         maxHealth = health[SceneManager.GetActiveScene().buildIndex - 5];
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        
     }
 
     // Update is called once per frame
