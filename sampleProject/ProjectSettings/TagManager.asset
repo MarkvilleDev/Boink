@@ -23,6 +23,7 @@ TagManager:
   - unmute
   - levelchanger
   - skins
+  - healthCanvas
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,8 @@ public class pausecomp : MonoBehaviour {
     public AudioSource pausemenu;
     public GameObject audiomanager;
     public GameObject gameController;
+    public GameObject winner;
+    public GameObject healthCanvas;
 
     // public void Setup() {
     //     // normal screen on, pause screen off
@@ -16,6 +18,7 @@ public class pausecomp : MonoBehaviour {
     //     pauseMenuUI.SetActive(false);
     //     credits_Page.SetActive(false);
     // }
+
     public void pausegame() {
         // usual off, pause on
         Debug.Log("paused");
@@ -24,15 +27,21 @@ public class pausecomp : MonoBehaviour {
         // audiomanager.GetComponent<buttonAudManager>().muting();
         usualButton.SetActive(false);
         gameController.SetActive(false);
+        //winner.SetActive(false);
+        //healthCanvas.SetActive(false);
         // credits_Page.SetActive(false);
         Time.timeScale = 0f;
     }
     public void resume() {
         Debug.Log("resumed");
         // if u press the back ig
+        healthCanvas = GameObject.FindGameObjectWithTag("healthCanvas");
+        winner = GameObject.FindGameObjectWithTag("Finish");
         pauseMenuUI.SetActive(false);
         usualButton.SetActive(true);
         gameController.SetActive(true);
+        //winner.SetActive(true);
+        //healthCanvas.SetActive(true);
         // credits_Page.SetActive(false);
         Time.timeScale = 1f;
     }
