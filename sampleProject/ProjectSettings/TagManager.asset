@@ -24,6 +24,7 @@ TagManager:
   - levelchanger
   - skins
   - healthCanvas
+  - selectedSkin
   layers:
   - Default
   - TransparentFX
