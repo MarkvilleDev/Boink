@@ -1626,10 +1626,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431426b04d53942568dfbf306cab02de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levels: 0000000000000000000000000000000000
-  skins: 00000000000000000000000000
+  levels: 0000000000000000000000000000000000000000
+  skins: 0000000000000000000000000000000000000000
   test: 0
   test2: 0
+  ismuted: 0
 --- !u!4 &342348038
 Transform:
   m_ObjectHideFlags: 0
@@ -1674,6 +1675,7 @@ MonoBehaviour:
   - {fileID: 1248381788}
   - {fileID: 1320459219}
   - {fileID: 1790571178}
+  - {fileID: 671829565}
   lvlButtons:
   - {fileID: 0}
   - {fileID: 21203139}
@@ -1692,6 +1694,7 @@ MonoBehaviour:
   - {fileID: 486605646}
   - {fileID: 1883441454}
   - {fileID: 194544646}
+  - {fileID: 1859263577}
   load: {fileID: 342348036}
 --- !u!1 &380484549
 GameObject:
