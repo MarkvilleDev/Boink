@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
         //    skins[i] = false;
         //}
         //skin = 0;
-        //SavePlayer();
+        SavePlayer();
     }
 
     public void winLevel (int num)
