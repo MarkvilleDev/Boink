@@ -17,9 +17,9 @@ public class skinSelector : MonoBehaviour
             skinImage[i].interactable = false;
         }
         load.GetComponent<Player>().LoadPlayer();
-        for (int i = 0; i < lockImages.Length; i++)
+        for (int i = 1; i < lockImages.Length; i++)
         {
-            if (load.GetComponent<Player>().levels[i])
+            if (load.GetComponent<Player>().skins[i])
             {
                 lockImages[i].enabled = false;
                 skinImage[i].interactable = true;

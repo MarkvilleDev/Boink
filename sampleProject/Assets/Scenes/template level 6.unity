@@ -986,7 +986,7 @@ MonoBehaviour:
   usual: {fileID: 1247120913}
   loseCanvas: {fileID: 1487051344}
   fade: {fileID: 207465017}
-  saveController: {fileID: 2073844151}
+  saveController: {fileID: 2026161643}
   audioManager: {fileID: 0}
   curScene: 0
 --- !u!4 &207465020
@@ -2346,7 +2346,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2073844152}
+      - m_Target: {fileID: 0}
         m_MethodName: unmute
         m_Mode: 1
         m_Arguments:
@@ -3702,7 +3702,7 @@ MonoBehaviour:
   usual: {fileID: 1247120913}
   loseCanvas: {fileID: 1487051344}
   fade: {fileID: 1442825039}
-  saveController: {fileID: 2073844151}
+  saveController: {fileID: 0}
   audioManager: {fileID: 0}
   curScene: 0
 --- !u!114 &973620258
@@ -6127,7 +6127,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2073844152}
+      - m_Target: {fileID: 0}
         m_MethodName: mute
         m_Mode: 1
         m_Arguments:
@@ -6675,7 +6675,7 @@ MonoBehaviour:
   usual: {fileID: 1247120913}
   loseCanvas: {fileID: 1487051344}
   fade: {fileID: 1442825039}
-  saveController: {fileID: 2073844151}
+  saveController: {fileID: 0}
   audioManager: {fileID: 0}
   curScene: 0
 --- !u!114 &1487051346
@@ -8755,7 +8755,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1964003008
 GameObject:
@@ -8938,7 +8938,7 @@ Transform:
   - {fileID: 15472953}
   - {fileID: 1675119806}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1975541385
 GameObject:
@@ -9230,6 +9230,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2026161643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2026161646}
+  - component: {fileID: 2026161645}
+  - component: {fileID: 2026161644}
+  m_Layer: 0
+  m_Name: SaveController
+  m_TagString: savecontroller
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2026161644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026161643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e39449fe43b4cdea2e1b58856ea73b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: []
+  load: {fileID: 2026161643}
+--- !u!114 &2026161645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026161643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 431426b04d53942568dfbf306cab02de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels: 0000000000000000000000000000000000
+  skins: 00000000000000000000000000
+  ismuted: 0
+  skin: 0
+--- !u!4 &2026161646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026161643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 990.48834, y: 749.24713, z: -95081.76}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2048819131
 GameObject:
   m_ObjectHideFlags: 0
@@ -9312,54 +9374,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2073844151
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2073844153}
-  - component: {fileID: 2073844152}
-  m_Layer: 0
-  m_Name: SaveController
-  m_TagString: savecontroller
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2073844152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073844151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 431426b04d53942568dfbf306cab02de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levels: 0000000000000000000000000000000000
-  skins: 00000000000000000000000000
-  test: 0
-  test2: 0
-  ismuted: 0
---- !u!4 &2073844153
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073844151}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 990.48834, y: 749.24713, z: -95081.76}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2083137226
 GameObject:

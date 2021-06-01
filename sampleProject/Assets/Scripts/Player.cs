@@ -6,13 +6,22 @@ public class Player : MonoBehaviour
 {
     public bool[] levels;
     public bool[] skins;
-    public int test;
-    public int test2;
     public bool ismuted;
+    public int skin;
 
     public void Start()
     {
         LoadPlayer();
+        //for (int i = 0; i < levels.Length; i++)
+        //{
+        //    levels[i] = false;
+        //}
+        //for (int i = 0; i < skins.Length; i++)
+        //{
+        //    skins[i] = false;
+        //}
+        //skin = 0;
+        //SavePlayer();
     }
 
     public void winLevel (int num)
@@ -31,11 +40,10 @@ public class Player : MonoBehaviour
     public void LoadPlayer ()
     {
         playerData data = SaveSystem.LoadPlayer();
-        test = data.levels.Length;
-        test2 = data.skins.Length;
         ismuted = data.ismuted;
         levels = data.levels;
         skins = data.skins;
+        skin = data.skin;
 
         Debug.Log(levels.Length);
         Debug.Log(skins.Length);
