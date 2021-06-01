@@ -10,17 +10,25 @@ public class Player : MonoBehaviour
     public int test2;
     public bool ismuted;
 
-    public void Start()
-    {
-        LoadPlayer();
-    }
+    //public void Start()
+    //{
+    //    //just some code to reset things
+    //    for (int i = 0; i < levels.Length; i++)
+    //    {
+    //        levels[i] = false;
+    //        SavePlayer();
+    //    }
+    //}
 
     public void winLevel (int num)
     {
         LoadPlayer();
         levels[num+1] = true;
-        skins[num] = true;
         SavePlayer();
+    }
+    public void unlockSkin(int num)
+    {
+        skins[num] = true;
     }
 
     public void SavePlayer ()
@@ -34,15 +42,15 @@ public class Player : MonoBehaviour
         test = data.levels.Length;
         test2 = data.skins.Length;
         ismuted = data.ismuted;
-        levels = data.levels;
-        skins = data.skins;
 
-        Debug.Log(levels.Length);
-        Debug.Log(skins.Length);
+        Debug.Log("load");
         for (int i = 0; i < data.levels.Length; i++)
-        { 
+        {
             levels[i] = data.levels[i];
         }
+
+        Debug.Log(test);
+        Debug.Log(test2);
         for (int i = 0; i < data.skins.Length; i++)
         {
             skins[i] = data.skins[i];

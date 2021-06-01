@@ -5,14 +5,13 @@ using UnityEngine.UI;
 
 public class levelSelector : MonoBehaviour
 {
-    public Image[] lockImages;
-    public Button[] lvlButtons;
+    public Image[] lockImages = new Image[17];
+    public Button[] lvlButtons = new Button[17];
     public GameObject load;
     
+
     void Start()
     {
-        load.GetComponent<Player>().SavePlayer();
-
         for (int i = 1; i < lockImages.Length; i++)
         {
             lvlButtons[i].interactable = false;
