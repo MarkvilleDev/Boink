@@ -176,12 +176,12 @@ public class masteraudio : MonoBehaviour
         if (playmenusound.isPlaying) playmenustop();
         if (!savecontroller.GetComponent<Player>().ismuted)
         {
-            playmenusound.Play();
+            playmenusound.mute = false;
         }
     }
     public void playmenustop()
     {
-        playmenusound.Stop();
+        playmenusound.mute=true;
     }
 
 

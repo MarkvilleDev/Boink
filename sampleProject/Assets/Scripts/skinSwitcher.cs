@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class skinSwitcher : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class skinSwitcher : MonoBehaviour
     public void Start()
     {
         load.GetComponent<Player>().LoadPlayer();
-        selectedSkin = GameObject.FindGameObjectsWithTag("selectedSkin");
+        selectedSkin = GameObject.FindGameObjectsWithTag("selectedSkin").OrderBy(go=>go.name).ToArray();
         if (selectedSkin.Length > 0) {
             for (int i = 0; i < selectedSkin.Length; i++)
             {
@@ -20,8 +21,9 @@ public class skinSwitcher : MonoBehaviour
             }
             selectedSkin[load.GetComponent<Player>().skin].SetActive(true);
         }
-        prefab = GameObject.FindGameObjectsWithTag("skins");
         Debug.Log("startinggg");
+
+        prefab = GameObject.FindGameObjectsWithTag("skins").OrderBy(go => go.name).ToArray();
         for (int i = 0; i < prefab.Length; i++)
         {
             prefab[i].SetActive(false);

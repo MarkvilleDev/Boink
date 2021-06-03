@@ -11,6 +11,8 @@ public class pausecomp : MonoBehaviour {
     public GameObject gameController;
     public GameObject winner;
     public GameObject healthCanvas;
+    public GameObject mute;
+    public GameObject unmute;
 
     // public void Setup() {
     //     // normal screen on, pause screen off
@@ -23,7 +25,7 @@ public class pausecomp : MonoBehaviour {
         // usual off, pause on
         Debug.Log("paused");
         pauseMenuUI.SetActive(true);
-        // audiomanager = GameObject.FindGameObjectWithTag("audiomanager");
+        //audiomanager = GameObject.FindGameObjectWithTag("audiomanager");
         // audiomanager.GetComponent<buttonAudManager>().muting();
         usualButton.SetActive(false);
         gameController.SetActive(false);

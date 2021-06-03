@@ -2113,6 +2113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: []
+  selectedSkin: []
   load: {fileID: 351922045}
 --- !u!114 &351922047
 MonoBehaviour:
@@ -4334,6 +4335,8 @@ MonoBehaviour:
   gameController: {fileID: 1516134564}
   winner: {fileID: 0}
   healthCanvas: {fileID: 0}
+  mute: {fileID: 0}
+  unmute: {fileID: 0}
 --- !u!114 &1088012099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5308,6 +5311,8 @@ MonoBehaviour:
   gameController: {fileID: 0}
   winner: {fileID: 0}
   healthCanvas: {fileID: 0}
+  mute: {fileID: 0}
+  unmute: {fileID: 0}
 --- !u!114 &1290392394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7462,29 +7467,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818153196}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1726044248}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 351922047}
         m_MethodName: unmute
         m_Mode: 1
         m_Arguments:
@@ -8266,29 +8249,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818153196}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1726044248}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 351922047}
         m_MethodName: mute
         m_Mode: 1
         m_Arguments:
@@ -9020,6 +8981,8 @@ MonoBehaviour:
   gameController: {fileID: 1516134564}
   winner: {fileID: 0}
   healthCanvas: {fileID: 0}
+  mute: {fileID: 0}
+  unmute: {fileID: 0}
 --- !u!114 &1961474133
 MonoBehaviour:
   m_ObjectHideFlags: 0

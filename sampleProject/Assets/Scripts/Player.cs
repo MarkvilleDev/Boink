@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public void Start()
     {
         LoadPlayer();
+        Time.timeScale=1f;
         //for (int i = 0; i < levels.Length; i++)
         //{
         //    levels[i] = false;

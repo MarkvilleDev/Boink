@@ -19,10 +19,15 @@ public class buttonAudManager : MonoBehaviour
 
     public void Awake()
     {
+        Debug.Log("find menu");
         if (SceneManager.GetActiveScene().buildIndex >= 5) PlaylevelStart();
         savecontroller = GameObject.FindGameObjectWithTag("savecontroller");
+        mute = GameObject.FindGameObjectWithTag("mute");
+        unmute = GameObject.FindGameObjectWithTag("unmute");
         playMenu();
-        muting();
+        if (SceneManager.GetActiveScene().buildIndex <5 ) {
+            muting();
+        }
     }
     public void muteMenu()
     {
@@ -71,22 +76,32 @@ public class buttonAudManager : MonoBehaviour
     }
     public void muting ()
     {
-        mute = GameObject.FindGameObjectWithTag("mute");
-        unmute = GameObject.FindGameObjectWithTag("unmute");
+        if (SceneManager.GetActiveScene().buildIndex >= 5)
+        {
+            if (GameObject.Find("pausemenu").transform.Find("Mute_soundon").gameObject != null) mute = GameObject.Find("pausemenu").transform.Find("Mute_soundon").gameObject;
+            if (GameObject.Find("pausemenu").transform.Find("Mute_soundoff").gameObject != null) unmute = GameObject.Find("pausemenu").transform.Find("Mute_soundoff").gameObject;
+        }
         if (savecontroller.GetComponent<Player>().ismuted)
         {
             muteMenu();
-            mute.SetActive(false);
-            unmute.SetActive(true);
+            if (mute != null)
+            {
+                mute.SetActive(false);
+                Debug.Log("mute");
+            }
+            Debug.Log("transition");
+            if (unmute != null)
+            {
+                unmute.SetActive(true);
+                Debug.Log("unmute");
+            }
         }
         else
         {
             playMenu();
-            mute.SetActive(true);
-            unmute.SetActive(false);
+            if (mute != null) mute.SetActive(true);
+            if (unmute!=null) unmute.SetActive(false);
         }
-
-        
     }
 
 }

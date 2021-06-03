@@ -1357,6 +1357,8 @@ MonoBehaviour:
   gameController: {fileID: 0}
   winner: {fileID: 0}
   healthCanvas: {fileID: 0}
+  mute: {fileID: 0}
+  unmute: {fileID: 0}
 --- !u!114 &308311478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4126,28 +4128,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1736069224}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1018226189}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1660860425}
         m_MethodName: unmute
         m_Mode: 1
@@ -5837,6 +5817,8 @@ MonoBehaviour:
   gameController: {fileID: 1750232798}
   winner: {fileID: 1739171792}
   healthCanvas: {fileID: 479943803}
+  mute: {fileID: 0}
+  unmute: {fileID: 0}
 --- !u!114 &1703341288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5956,28 +5938,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1736069224}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1018226189}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1660860425}
         m_MethodName: mute
         m_Mode: 1
@@ -7161,6 +7121,8 @@ MonoBehaviour:
   gameController: {fileID: 1750232798}
   winner: {fileID: 1739171792}
   healthCanvas: {fileID: 479943803}
+  mute: {fileID: 0}
+  unmute: {fileID: 0}
 --- !u!1 &2044969993
 GameObject:
   m_ObjectHideFlags: 0

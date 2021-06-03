@@ -914,7 +914,7 @@ GameObject:
   - component: {fileID: 190765099}
   - component: {fileID: 190765098}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image q
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -988,7 +988,7 @@ GameObject:
   - component: {fileID: 221137087}
   - component: {fileID: 221137086}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image n
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2006,7 +2006,7 @@ GameObject:
   - component: {fileID: 374635478}
   - component: {fileID: 374635477}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image i
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2080,7 +2080,7 @@ GameObject:
   - component: {fileID: 418407554}
   - component: {fileID: 418407553}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image d
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2228,7 +2228,7 @@ GameObject:
   - component: {fileID: 444536233}
   - component: {fileID: 444536232}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image k
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2302,7 +2302,7 @@ GameObject:
   - component: {fileID: 445802246}
   - component: {fileID: 445802245}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image f
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2450,7 +2450,7 @@ GameObject:
   - component: {fileID: 505027121}
   - component: {fileID: 505027120}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image b
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2809,7 +2809,7 @@ GameObject:
   - component: {fileID: 598598181}
   - component: {fileID: 598598180}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image r
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3016,7 +3016,7 @@ GameObject:
   - component: {fileID: 677455815}
   - component: {fileID: 677455814}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image c
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3441,7 +3441,7 @@ GameObject:
   - component: {fileID: 796874039}
   - component: {fileID: 796874038}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image l
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3952,7 +3952,7 @@ GameObject:
   - component: {fileID: 918589513}
   - component: {fileID: 918589512}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image o
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4459,7 +4459,7 @@ GameObject:
   - component: {fileID: 1066322221}
   - component: {fileID: 1066322220}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image g
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4666,7 +4666,7 @@ GameObject:
   - component: {fileID: 1132120385}
   - component: {fileID: 1132120384}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image j
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5025,7 +5025,7 @@ GameObject:
   - component: {fileID: 1186359949}
   - component: {fileID: 1186359948}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image a
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5427,7 +5427,7 @@ GameObject:
   - component: {fileID: 1266520818}
   - component: {fileID: 1266520817}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image p
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5919,7 +5919,7 @@ GameObject:
   - component: {fileID: 1419793245}
   - component: {fileID: 1419793244}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image e
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6504,7 +6504,7 @@ GameObject:
   - component: {fileID: 1519598131}
   - component: {fileID: 1519598130}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image h
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6877,7 +6877,7 @@ GameObject:
   - component: {fileID: 1616378154}
   - component: {fileID: 1616378153}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image m
   m_TagString: selectedSkin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8113,7 +8113,7 @@ MonoBehaviour:
   - {fileID: 1019678028}
   - {fileID: 1939496285}
   - {fileID: 1475691600}
-  - {fileID: 265725413}
+  - {fileID: 1764888702}
   - {fileID: 265725413}
   - {fileID: 116446613}
   - {fileID: 715214588}

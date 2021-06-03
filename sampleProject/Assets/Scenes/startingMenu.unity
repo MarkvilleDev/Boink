@@ -466,9 +466,9 @@ MonoBehaviour:
   menusound: {fileID: 0}
   levelstart: {fileID: 0}
   masteraudioobject: {fileID: 0}
-  savecontroller: {fileID: 0}
-  mute: {fileID: 0}
-  unmute: {fileID: 0}
+  savecontroller: {fileID: 1944146091}
+  mute: {fileID: 603466965}
+  unmute: {fileID: 542912481}
 --- !u!4 &289869070
 Transform:
   m_ObjectHideFlags: 0
@@ -829,28 +829,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 542912481}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 603466965}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 289869068}
         m_MethodName: playmenu
         m_Mode: 1
@@ -1028,28 +1006,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 603466965}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 542912481}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 289869068}
         m_MethodName: playmenustop
         m_Mode: 1
@@ -3351,9 +3307,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levels: 0000000000000000000000000000000000000000
   skins: 0000000000000000000000000000000000000000
-  test: 0
-  test2: 0
   ismuted: 0
+  skin: 0
 --- !u!4 &1944146093
 Transform:
   m_ObjectHideFlags: 0
