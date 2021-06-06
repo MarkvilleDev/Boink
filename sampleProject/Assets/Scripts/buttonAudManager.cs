@@ -17,7 +17,7 @@ public class buttonAudManager : MonoBehaviour
     public GameObject mute;
     public GameObject unmute;
 
-    public void Awake()
+    public void Start()
     {
         Debug.Log("find menu");
         if (SceneManager.GetActiveScene().buildIndex >= 5) PlaylevelStart();
