@@ -22,8 +22,10 @@ public class buttonAudManager : MonoBehaviour
         Debug.Log("find menu");
         if (SceneManager.GetActiveScene().buildIndex >= 5) PlaylevelStart();
         savecontroller = GameObject.FindGameObjectWithTag("savecontroller");
-        mute = GameObject.FindGameObjectWithTag("mute");
-        unmute = GameObject.FindGameObjectWithTag("unmute");
+        if (mute!=null) mute = GameObject.FindGameObjectWithTag("mute");
+        if (unmute != null) unmute = GameObject.FindGameObjectWithTag("unmute");
+        mute.SetActive(true);
+        unmute.SetActive(false);
         playMenu();
         if (SceneManager.GetActiveScene().buildIndex <5 ) {
             muting();
@@ -95,12 +97,14 @@ public class buttonAudManager : MonoBehaviour
                 unmute.SetActive(true);
                 Debug.Log("unmute");
             }
+            return;
         }
         else
         {
             playMenu();
             if (mute != null) mute.SetActive(true);
             if (unmute!=null) unmute.SetActive(false);
+            return;
         }
     }
 
