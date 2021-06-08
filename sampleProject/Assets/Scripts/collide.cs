@@ -19,6 +19,7 @@ public class collide : MonoBehaviour
         if (collision.gameObject.CompareTag("Finish"))
         {
             GameObject.FindGameObjectWithTag("Player").SetActive(false);
+            Debug.Log("win");
             lvlchngscript.GetComponent<levelchanger>().win();
         }
         else
