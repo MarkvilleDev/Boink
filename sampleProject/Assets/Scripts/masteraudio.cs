@@ -181,6 +181,7 @@ public class masteraudio : MonoBehaviour
     }
     public void playmenustop()
     {
+        playmenusound = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         playmenusound.mute=true;
     }
 
