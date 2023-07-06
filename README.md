@@ -1,8 +1,6 @@
 # Bo!nk - Drawing-Based Puzzle Game
 Bo!nk is a captivating drawing-based puzzle game that puts players' creativity and problem-solving skills to the test. In this game, players must draw lines strategically to guide colorful balls into their corresponding holes, all while navigating through challenging obstacles and mazes. With its cartoonish art style, realistic physics, and engaging mechanics, Bo!nk offers an immersive gaming experience for players of all ages. It was created in Unity with C#.
 
-![boink](https://github.com/MarkvilleDev/Boink/assets/75771131/73f6567d-faca-4073-a34b-61e4af0026a6)
-
 ## Key Features
 * Drawing Mechanics: Players draw lines directly on the screen to manipulate the trajectory of the balls and guide them into the holes. The lines can be drawn using touch input or mouse controls, allowing for precise and intuitive gameplay.
 
